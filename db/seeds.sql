@@ -1,15 +1,3 @@
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES
-    ('John', 'Doe', 1, 3),
-    ('Mike', 'Chan', 2, 1),
-    ('Ashley', 'Rodriquez', 3),
-    ('Kevin', 'Tupile', 4, 3),
-    ('Malia', 'Brown', 5),
-    ('Sarah', 'Lourd', 6),
-    ('Tom', 'Allen', 7, 6),
-    ('Tammer', 'Galal', 4, 3);
-
-
 INSERT INTO role (title, salary, department_id)
 VALUES
     ('Sales Lead', 100000, 1),
@@ -26,3 +14,18 @@ VALUES
     ('Engineering'), 
     ('Finance'), 
     ('Legal');
+
+-- Re-order this last so you have the role IDs to add
+INSERT INTO employee (first_name, last_name, role_id)
+VALUES
+    ('John', 'Doe', 1),
+    ('Mike', 'Chan', 2),
+    ('Ashley', 'Rodriquez', 3),
+    ('Kevin', 'Tupile', 4),
+    ('Malia', 'Brown', 5),
+    ('Sarah', 'Lourd', 6),
+    ('Tom', 'Allen', 7),
+    ('Tammer', 'Galal', 4);
+
+UPDATE employee SET manager_id = 9 WHERE id in (10,11);
+UPDATE employee SET manager_id = 12 where id in (13,14);
