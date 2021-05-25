@@ -7,7 +7,7 @@ VALUES
     ('Malia', 'Brown', 5),
     ('Sarah', 'Lourd', 6),
     ('Tom', 'Allen', 7, 6),
-    ('Tammer', 'Galal', 4, 3)
+    ('Tammer', 'Galal', 4, 3);
 
 
 INSERT INTO role (title, salary, department_id)
@@ -18,11 +18,11 @@ VALUES
     ('Software engineer', 120000, 2),
     ('Accountant', 125000, 3),
     ('Legal team lead', 250000, 4),
-    ('Lawyer', 250000, 4)
+    ('Lawyer', 250000, 4);
 
 INSERT INTO department (name)
 VALUES
     ('Sales'),    
     ('Engineering'), 
     ('Finance'), 
-    ('Legal')
+    ('Legal');
